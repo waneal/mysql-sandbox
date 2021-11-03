@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  ubuntu:
+    build: ./
+    volumes:
+      - ../:/workspace
+    command: /bin/sh -c "while sleep 1000; do :; done"

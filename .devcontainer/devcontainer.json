@@ -1,0 +1,7 @@
+{
+	"name": "mysql sandbox",
+	"dockerComposeFile": "./docker-compose.yml",
+	"service": "ubuntu",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose"
+}
